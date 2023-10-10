@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Booking</title>
+    <style>
+        body {
+            background-image: url('ferrari.jpg'); /* Replace 'your-image-file.jpg' with your image filename */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 165, 0, 0.8); /* Orangish container background with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff; /* White text */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #fff; /* White text */
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #FF6347; /* Reddish button background */
+            color: #fff; /* White text */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF4500; /* Darker reddish background on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Car Rental Booking</h1>
+        <form>
+            <div class="form-group">
+                <label for="carModel">Car Model</label>
+                <select id="carModel" required>
+                    <option value="SUV">SUV</option>
+                    <option value="NEXA">NEXA</option>
+                    <option value="Honda City">Honda City</option>
+                    <option value="Toyota Corolla">Toyota Corolla</option>
+                    <option value="Ford Focus">Ford Focus</option>
+                    <option value="BMW 3 Series">BMW 3 Series</option>
+                    <option value="Volkswagen Golf">Volkswagen Golf</option>
+                    <option value="Hyundai Elantra">Hyundai Elantra</option>
+                    <!-- Add more car model options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="seatingCapacity">Seating Capacity</label>
+                <select id="seatingCapacity" required>
+                    <option value="4">4 Seater</option>
+                    <option value="5">5 Seater</option>
+                    <option value="7">7 Seater</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="averageFuelConsumption">Average Fuel Consumption (MPG)</label>
+                <select id="averageFuelConsumption" required>
+                    <option value="20">20 MPG</option>
+                    <option value="25">25 MPG</option>
+                    <option value="30">30 MPG</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickupLocation">Pickup Location</label>
+                <input type="text" id="pickupLocation" required>
+            </div>
+            <div class="form-group">
+                <label for="returnLocation">Return Location</label>
+                <input type="text" id="returnLocation" required>
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">Pickup Date</label>
+                <input type="date" id="pickupDate" required>
+            </div>
+            <div class="form-group">
+                <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate" required>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method</label>
+                <select id="paymentMethod" required>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="debitCard">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </div>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
